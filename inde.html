@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generated Page</title>
+    <style>
+      :root {
+        --bg: #f3f6ff;
+        --card: #ffffff;
+        --primary: #4f46e5;
+        --primary-dark: #3730a3;
+        --text: #1f2937;
+        --muted: #6b7280;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #e0e7ff);
+        color: var(--text);
+      }
+
+      .card {
+        width: min(420px, 90vw);
+        background: var(--card);
+        border-radius: 18px;
+        box-shadow: 0 20px 45px rgba(79, 70, 229, 0.15);
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 5vw, 2.5rem);
+      }
+
+      p {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      button {
+        border: none;
+        border-radius: 999px;
+        background: var(--primary);
+        color: white;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Generated</h1>
+      <p>
+        This page was generated in the HTML file and is ready to use.
+      </p>
+      <button type="button">Click Me</button>
+    </main>
+
+    <script>
+      const button = document.querySelector('button');
+      button.addEventListener('click', () => {
+        button.textContent = 'Generated!';
+      });
+    </script>
+  </body>
+</html>
